@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Boy's Christmas Wish List - Sizes</title>
+  <title>Christmas Wish List - Sizes</title>
   <style>
     body {
       margin: 0;
@@ -14,82 +14,17 @@
       width: 8.5in;
       min-height: 11in;
       margin: 0.5in auto;
-      padding: 0.75in;
+      padding: 0.5in;
       box-sizing: border-box;
       background: white;
       box-shadow: 0 0 6px rgba(0,0,0,0.15);
       display: flex;
       flex-direction: column;
-    }
-    h1 {
-      text-align: center;
-      margin-top: 0;
-      margin-bottom: 0.4in;
-      font-weight: 600;
-      letter-spacing: 0.03em;
-    }
-    .content {
-      display: flex;
-      flex: 1;
-      gap: 0.75in;
-    }
-    .boy-area {
-      flex: 1;
-      border: none;
-      display: flex;
       align-items: center;
-      justify-content: center;
-      padding: 0.25in;
-    }
-    
-    .boy-area img {
-      max-width: 100%;
-      max-height: 100%;
-      height: auto;
-    }
-
-    .form-area {
-      flex: 1;
-      font-size: 1rem;
-    }
-    .field {
-      margin-bottom: 0.35in;
-    }
-    .field label {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 0.05in;
-      letter-spacing: 0.06em;
-      font-size: 0.9rem;
-    }
-    .line-input {
-      width: 100%;
-      border: none;
-      border-bottom: 1px solid #444;
-      font-size: 1rem;
-      padding: 2px 0;
-      outline: none;
-    }
-    .line-input::placeholder {
-      color: #aaa;
-    }
-    .logos-textarea {
-      width: 100%;
-      height: 1.5in;
-      border: 1px solid #444;
-      box-sizing: border-box;
-      resize: none;
-      padding: 4px;
-      font-size: 1rem;
-      outline: none;
-    }
-    .footer-note {
-      font-size: 0.75rem;
-      text-align: right;
-      color: #777;
-      margin-top: 0.1in;
+      justify-content: flex-start;
     }
     .controls {
+      width: 100%;
       text-align: right;
       margin-bottom: 0.25in;
     }
@@ -97,6 +32,10 @@
       padding: 6px 12px;
       font-size: 0.9rem;
       cursor: pointer;
+    }
+    .form-image {
+      max-width: 100%;
+      height: auto;
     }
     @media print {
       body {
@@ -118,49 +57,8 @@
       <button class="print-button" onclick="window.print()">Print / Save as PDF</button>
     </div>
 
-    <h1>BOY'S CHRISTMAS WISH LIST - SIZES</h1>
-
-    <div class="content">
-      <!-- Left: drawing area -->
-    <div class="boy-area">
-      <img src="figure-sketch.png" alt="Sizing Figure">
-    </div>
-
-
-      <!-- Right: form fields -->
-      <div class="form-area">
-        <div class="field">
-          <label for="name">NAME</label>
-          <input id="name" class="line-input" type="text" placeholder="First & Last Name">
-        </div>
-
-        <div class="field">
-          <label for="shirt">SHIRT SIZE</label>
-          <input id="shirt" class="line-input" type="text" placeholder="e.g. Youth M, 8/10">
-        </div>
-
-        <div class="field">
-          <label for="pants">PANTS SIZE</label>
-          <input id="pants" class="line-input" type="text" placeholder="e.g. 10 Slim, 10 Husky">
-        </div>
-
-        <div class="field">
-          <label for="shoes">SHOE SIZE</label>
-          <input id="shoes" class="line-input" type="text" placeholder="e.g. 4 Youth">
-        </div>
-
-        <div class="field">
-          <label for="logos">LOGOS / CHARACTERS LIKED</label>
-          <textarea id="logos" class="logos-textarea"
-            placeholder="Example: Minecraft, Mario, Spider-Man, Nike, dinosaurs, trucks..."></textarea>
-        </div>
-
-        <div class="footer-note">
-          Fill out, then use Print → Save as PDF.
-        </div>
-      </div>
-    </div>
+    <!-- CHANGE THE FILE NAME BELOW TO MATCH YOUR UPLOADED IMAGE -->
+    <img src="figure-sketch.png" alt="Christmas wish list size form" class="form-image">
   </div>
 </body>
 </html>
-
